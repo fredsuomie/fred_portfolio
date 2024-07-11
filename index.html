@@ -1,33 +1,186 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
+    <header>
+        <h1>Alfred Menwon Suomie</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <!-- Your content here -->
+        </section>
 
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Your projects here -->
+            <div class="project" data-category="web">
+                <h3>Employee Management System Python 1</h3>
+                <p>The Employee Management System (EMS) for a university is a software application developed to automate and streamline the management of university staff. This system facilitates 
+                    the efficient handling of employee-related data and processes such as record management, leave management, payroll processing, and performance evaluation. Developed using Python, 
+                    the EMS ensures that administrative tasks are performed accurately and promptly, enhancing the overall productivity and operational efficiency of the university's HR department.
+                    a. Employee Record Management
+
+                 This module allows for the comprehensive management of employee data. It enables the addition,
+                  updating, viewing,
+                  and deletion of employee records, ensuring that all information is current and accurate.
+
+                  b. Leave Management
+                 This module handles all aspects of employee leave,
+                  including applications, approvals, and tracking of leave balances.
+
+                  c. Payroll Management
+                  This module automates payroll processing, including salary calculations,
+                   deductions, and payslip generation, ensuring timely and accurate salary payments.
+                  
+                  d. Performance Evaluation
+                    This module facilitates the regular assessment of employee performance.
+                     It allows for setting performance criteria, recording performance reviews, 
+                     and generating evaluation reports.
+
+                  e. User Management
+                    This module manages the creation, modification, and deletion of user accounts, 
+                    as well as defining roles and permissions. It ensures that only authorized personnel
+                     can access specific functionalities of the EMS.
+                </p>
+            </div>
+            <div class="project" data-category="mobile">
+                <h3>Employee Management System Java 2</h3>
+                <p>The Employee Management System (EMS) is a comprehensive software application designed to manage employee information efficiently. The system aims to streamline HR processes, improve data accuracy,
+                     and provide easy access to employee-related information.
+                     To create a user-friendly interface for managing employee data.
+                     To automate HR processes such as employee registration, attendance tracking, payroll management, and performance evaluation.
+                     To ensure data integrity and security.
+                     To provide analytical reports for decision-making.</p>
+            </div>
+            <div class="project" data-category="web">
+                <h3>School Management system using Python Django</h3>
+                <p>This School Management System is a web-based application developed using Python, Django, and MySQL. It's designed to streamline and automate various administrative tasks in an educational institution.
+                     The system aims to provide an efficient way to manage student information, teacher records, courses, attendance, and grades.
+                    </p>
+            </div>
+
+            <div class="project-filters">
+                <button class="project-filter" data-category="all">All</button>
+                <button class="project-filter" data-category="web">Web</button>
+                <button class="project-filter" data-category="mobile">Mobile</button>
+                <!-- Add more category buttons as needed -->
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project" data-category="web">
+                <h3>Employee Management System</h3>
+                <img src="./EM module.png" alt="Employee Management Module" class="project-image" width="300" height="350"> <br><br>
+                <p>The Employee Management System (EMS) is a comprehensive software application designed to manage employee information efficiently. The system aims to streamline HR processes, improve data accuracy,
+                     and provide easy access to employee-related information.
+                     To create a user-friendly interface for managing employee data. <br><br>
+                <img src="./LM module.png" alt="Leave Management Module" class="project-image" width="300" height="350"> <br><br>
+                <p>The Leave Management System (LMS) is a module within the Employee Management System (EMS) that focuses on managing employee leave requests, approvals, and tracking. It is designed to streamline the leave management process and ensure that employees can easily request and track their leave status.
+                <p>Technologies used: Python, AWS RDS, MySQL, etc.</p>
+                <a href="https://github.com/fredsuomie/Employee-Management-System-python.git" target="_blank">View on GitHub</a>
+                <a href="https://project-demo-link.com" target="_blank">Live Demo</a>
+            </div>
+            <!-- Repeat for each project -->
+        </section>
+
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>You can download my resume by clicking the link below:</p>
+            <a href="./Resume.jpg.jpg" download="YourName_Resume.jpg">Download Resume</a>
+            <!-- Optionally embed the resume -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <!-- Your form fields here -->
+                <section id="about">
+                    <h2>About Me</h2>
+                    <img src="./your-photo.jpg.jpg" alt="Your Name" class="profile-photo" width="200" height="250">
+                    <p>Hello! I'm Alfred Menwon Suomie, a Cloud Engineer based in Rajkot,Gujarat, India. I specialize in software development and Cloud Computing.</p>
+                    <p>With 2 years of experience in Software development, I'm passionate about creating innovative solutions that make a difference.</p>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>AWS, Azure, Google Cloud Platform </li>
+                        <li>Project Management</li>
+                        <li>Leadership</li>
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Networking</li>
+                        <!-- Add more skills as needed -->
+                    </ul>
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <!-- Add more frameworks and libraries as needed -->
+                        <!-- Add more -->
+                    </ul>
+                </section>
+
+                <section id="contact">
+                    <h2>Contact Me</h2>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                    <ul>
+                        <li>Email: <a href="mailto:suomiealfred53@gmail.com">suomiealfred53@gmail.com</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/alfred-suomie-a3655424b" target="_blank">Your LinkedIn</a></li>
+                        <li>GitHub: <a href="https://github.com/fredsuomie" target="_blank">Your GitHub</a></li>
+                    </ul>
+                    <!-- You can also add a contact form here if you prefer -->
+                </section>
+
+            </form>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <form action="your-form-processing-url" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Alfred Menwon Suomie. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
